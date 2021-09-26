@@ -6,4 +6,5 @@ src = "src"
 language = "zh-TW"
 
 [output.html]
+google-analytics = "UA-103835191-1"
 additional-css = ["./theme/color.css"]
