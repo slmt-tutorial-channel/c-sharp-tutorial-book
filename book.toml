@@ -4,3 +4,6 @@ authors = ["Yu-Shan Lin"]
 description = "紀錄 Youtube 頻道「小山的教學平台」上的 C# 教學內容與題目"
 src = "src"
 language = "zh-TW"
+
+[output.html]
+additional-css = ["./theme/color.css"]
