@@ -12,6 +12,9 @@ jobs:
       
       - name: Setup Rust Environments 🦀
         uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
 
       - name: Check Cache 📑
         uses: Swatinem/rust-cache@v1
