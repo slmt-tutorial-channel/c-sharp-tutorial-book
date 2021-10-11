@@ -20,7 +20,7 @@ jobs:
         uses: Swatinem/rust-cache@v1
 
       - name: Install mdbook 🔧
-        run: (test -x $HOME/.cargo/bin/mdbook || cargo install --vers "^0.2" mdbook)
+        run: (test -x $HOME/.cargo/bin/mdbook || cargo install mdbook)
 
       - name: Build 📕
         run: mdbook build
