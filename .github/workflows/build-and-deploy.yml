@@ -16,7 +16,7 @@ jobs:
           toolchain: stable
           override: true
 
-      - name: Check Cache 📑
+      - name: Restore Cached Dependencies 📑
         uses: actions/cache@v2
         env:
           cache-name: cache-rust-env
