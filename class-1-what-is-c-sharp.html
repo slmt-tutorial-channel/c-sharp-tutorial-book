@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>本書介紹 - 小山的 C# 教學</title>
+        <title>第 1 課 - C# 是甚麼？ - 小山的 C# 教學</title>
                 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html" class="active">本書介紹</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="class-0-introduction.html"><strong aria-hidden="true">1.</strong> 第 0 課 - 閒聊與影片介紹</a></li><li class="chapter-item expanded "><a href="class-1-what-is-c-sharp.html"><strong aria-hidden="true">2.</strong> 第 1 課 - C# 是甚麼？</a></li><li class="chapter-item expanded "><a href="class-2-ide-and-hello-world.html"><strong aria-hidden="true">3.</strong> 第 2 課 - IDE 跟 Hello World</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">本書介紹</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="class-0-introduction.html"><strong aria-hidden="true">1.</strong> 第 0 課 - 閒聊與影片介紹</a></li><li class="chapter-item expanded "><a href="class-1-what-is-c-sharp.html" class="active"><strong aria-hidden="true">2.</strong> 第 1 課 - C# 是甚麼？</a></li><li class="chapter-item expanded "><a href="class-2-ide-and-hello-world.html"><strong aria-hidden="true">3.</strong> 第 2 課 - IDE 跟 Hello World</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -144,11 +144,35 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="本書介紹"><a class="header" href="#本書介紹">本書介紹</a></h1>
-<p>這線上電子書整理了 Youtube 頻道「<a href="https://www.youtube.com/channel/UCmumrs_hb9s6eoVI29gLBgA">小山的教學平台</a>」的「<a href="https://www.youtube.com/channel/UCmumrs_hb9s6eoVI29gLBgA/playlists">小山的 C# 教學</a>」影片之中的重點、補充資料以及一些練習題。</p>
-<p>本書由頻道主小山本人親自維護，並放在 <a href="https://github.com/">GitHub</a> 上，經由 <a href="https://github.com/features/actions">GitHub Actions</a> 自動編譯與發佈到 <a href="https://pages.github.com/">GitHub Page</a>。</p>
-<h2 id="遷移公告"><a class="header" href="#遷移公告">遷移公告</a></h2>
-<p>舊的網站「<a href="http://slmtsite.blogspot.com/2013/11/c.html">SLMT's Tutorial Blog</a>」將逐步停止維護，並且 C# 相關的教學內容將會慢慢轉移至這本書中。其他的教學也會建立對應的書籍進行轉移。</p>
+                        <h1 id="第-1-課---c-是甚麼"><a class="header" href="#第-1-課---c-是甚麼">第 1 課 - C# 是甚麼？</a></h1>
+<h2 id="span-classsection_abstract本課介紹span"><a class="header" href="#span-classsection_abstract本課介紹span"><span class="section_abstract">本課介紹</span></a></h2>
+<p>此課主要在簡介 C# 以及介紹它如何運作</p>
+<h2 id="span-classsection_video教學影片span"><a class="header" href="#span-classsection_video教學影片span"><span class="section_video">教學影片</span></a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GDnI1_JyfwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="span-classsection_highlights重點提示span"><a class="header" href="#span-classsection_highlights重點提示span"><span class="section_highlights">重點提示</span></a></h2>
+<ol>
+<li>C# 是由 Microsoft (微軟) 公司推出的程式語言</li>
+<li>C# 比較適合在 Windows 下面運行</li>
+<li>C# 是物件導向的程式語言</li>
+<li>「物件導向」簡單來說就是「透過建立物件，並且讓這些物件互動，來達成你想完成的目標」</li>
+<li>物件導向有三個原則「封裝(Encapsulation)」、「繼承(Inheritance)」、「多形(Polymorphism)」</li>
+<li>C# 必須要配合「.NET Framework」來運行</li>
+<li>C# 經過編譯之後，得到的是一種稱為「中間代碼」的東西，而不是組合語言的程式碼。</li>
+</ol>
+<h2 id="span-classsection_supplementary補充span"><a class="header" href="#span-classsection_supplementary補充span"><span class="section_supplementary">補充</span></a></h2>
+<h3 id="microsoft"><a class="header" href="#microsoft">Microsoft</a></h3>
+<p>相信大家都知道世界知名的軟體公司，微軟。這個由比爾蓋茲(Bill Gates)創建的公司，旗下的作業系統，Windows，已經深入到我們周遭的電腦之中。現在大多數的人都使用過他們的產品，而且也變成生活中或不可缺的一部分。</p>
+<h3 id="net-framework"><a class="header" href="#net-framework">.NET Framework</a></h3>
+<p>C# 無法像用 C/C++ 寫的程式，直接在各種環境下執行。C# 經過編譯之後產生的是一種電腦無法直接識別的代碼，因此必須要經過一個程式幫它翻譯。而這個程式就叫做「Common Language Runtime (CLR)」，除了幫忙轉換代碼外，它還會負責管理 C# 程式使用的資源，這對寫程式的人來說是非常方便的。而 CLR 以及 C# 需要用到的其他資料，都被整合在「.NET Framework」這個環境之下。所以「.NET Framework」對 C# 來說是不可或缺的一部份。</p>
+<h3 id="編譯compile"><a class="header" href="#編譯compile">編譯(Compile)</a></h3>
+<p>這邊的編譯指的是將程式碼轉換成另一種代碼的這個過程。因為我們所看到的程式碼電腦無法直接執行，所以必須轉換成比較方便執行的形式。通常程式碼會在執行之前就先編譯好，以防止在執行的時候浪費時間在編譯上面。</p>
+<h3 id="組合語言"><a class="header" href="#組合語言">組合語言</a></h3>
+<p>程式語言有分很多種，組合語言就是其中一種分類。組合語言的程式碼基本上就是把電腦所看到的機器語言稍微轉換成比較好記的形式而已，所以感覺就像是直接對 CPU(中央處理器) 下指令。但是因為要編寫組合語言必須要很了解 CPU 的執行模式，所以必須要具備許多電腦結構的知識才行。</p>
+<h2 id="span-classsection_references相關資訊連結span"><a class="header" href="#span-classsection_references相關資訊連結span"><span class="section_references">相關資訊連結</span></a></h2>
+<h3 id="微軟的-c-與-net-framework-簡介"><a class="header" href="#微軟的-c-與-net-framework-簡介">微軟的 C# 與 .NET Framework 簡介</a></h3>
+<p><a href="http://msdn.microsoft.com/zh-tw/library/z1zx9t92(v=vs.80).aspx">http://msdn.microsoft.com/zh-tw/library/z1zx9t92(v=vs.80).aspx</a></p>
+<h3 id="維基百科對於物件導向的介紹"><a class="header" href="#維基百科對於物件導向的介紹">維基百科對於物件導向的介紹</a></h3>
+<p><a href="http://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B">http://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B</a></p>
 
                         
                         <!-- Disque Comment Section -->
@@ -158,8 +182,8 @@
                         </div>
                         <script>
                             var disqus_config = function () {
-                            this.page.url = 'https://slmt-tutorial-channel.github.io/c-sharp-tutorial-book/index.md';
-                            this.page.identifier = 'index.md';
+                            this.page.url = 'https://slmt-tutorial-channel.github.io/c-sharp-tutorial-book/class-1-what-is-c-sharp.md';
+                            this.page.identifier = 'class-1-what-is-c-sharp.md';
                             };
                             (function() { // DON'T EDIT BELOW THIS LINE
                             var d = document, s = d.createElement('script');
@@ -173,8 +197,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                                                    <a rel="prev" href="class-0-introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
                         
-                                                    <a rel="next" href="class-0-introduction.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="class-2-ide-and-hello-world.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -184,8 +211,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                                    <a rel="prev" href="class-0-introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
                 
-                                    <a rel="next" href="class-0-introduction.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="class-2-ide-and-hello-world.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>

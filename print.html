@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">本書介紹</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="class-0-introduction.html"><strong aria-hidden="true">1.</strong> 第 0 課 - 閒聊與影片介紹</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">本書介紹</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="class-0-introduction.html"><strong aria-hidden="true">1.</strong> 第 0 課 - 閒聊與影片介紹</a></li><li class="chapter-item expanded "><a href="class-1-what-is-c-sharp.html"><strong aria-hidden="true">2.</strong> 第 1 課 - C# 是甚麼？</a></li><li class="chapter-item expanded "><a href="class-2-ide-and-hello-world.html"><strong aria-hidden="true">3.</strong> 第 2 課 - IDE 跟 Hello World</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -169,6 +169,60 @@
 <h2 id="span-classsection_references相關資訊連結span"><a class="header" href="#span-classsection_references相關資訊連結span"><span class="section_references">相關資訊連結</span></a></h2>
 <h3 id="維基百科---ide"><a class="header" href="#維基百科---ide">維基百科 - IDE</a></h3>
 <p><a href="http://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">http://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="第-1-課---c-是甚麼"><a class="header" href="#第-1-課---c-是甚麼">第 1 課 - C# 是甚麼？</a></h1>
+<h2 id="span-classsection_abstract本課介紹span-1"><a class="header" href="#span-classsection_abstract本課介紹span-1"><span class="section_abstract">本課介紹</span></a></h2>
+<p>此課主要在簡介 C# 以及介紹它如何運作</p>
+<h2 id="span-classsection_video教學影片span-1"><a class="header" href="#span-classsection_video教學影片span-1"><span class="section_video">教學影片</span></a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GDnI1_JyfwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="span-classsection_highlights重點提示span-1"><a class="header" href="#span-classsection_highlights重點提示span-1"><span class="section_highlights">重點提示</span></a></h2>
+<ol>
+<li>C# 是由 Microsoft (微軟) 公司推出的程式語言</li>
+<li>C# 比較適合在 Windows 下面運行</li>
+<li>C# 是物件導向的程式語言</li>
+<li>「物件導向」簡單來說就是「透過建立物件，並且讓這些物件互動，來達成你想完成的目標」</li>
+<li>物件導向有三個原則「封裝(Encapsulation)」、「繼承(Inheritance)」、「多形(Polymorphism)」</li>
+<li>C# 必須要配合「.NET Framework」來運行</li>
+<li>C# 經過編譯之後，得到的是一種稱為「中間代碼」的東西，而不是組合語言的程式碼。</li>
+</ol>
+<h2 id="span-classsection_supplementary補充span-1"><a class="header" href="#span-classsection_supplementary補充span-1"><span class="section_supplementary">補充</span></a></h2>
+<h3 id="microsoft"><a class="header" href="#microsoft">Microsoft</a></h3>
+<p>相信大家都知道世界知名的軟體公司，微軟。這個由比爾蓋茲(Bill Gates)創建的公司，旗下的作業系統，Windows，已經深入到我們周遭的電腦之中。現在大多數的人都使用過他們的產品，而且也變成生活中或不可缺的一部分。</p>
+<h3 id="net-framework"><a class="header" href="#net-framework">.NET Framework</a></h3>
+<p>C# 無法像用 C/C++ 寫的程式，直接在各種環境下執行。C# 經過編譯之後產生的是一種電腦無法直接識別的代碼，因此必須要經過一個程式幫它翻譯。而這個程式就叫做「Common Language Runtime (CLR)」，除了幫忙轉換代碼外，它還會負責管理 C# 程式使用的資源，這對寫程式的人來說是非常方便的。而 CLR 以及 C# 需要用到的其他資料，都被整合在「.NET Framework」這個環境之下。所以「.NET Framework」對 C# 來說是不可或缺的一部份。</p>
+<h3 id="編譯compile"><a class="header" href="#編譯compile">編譯(Compile)</a></h3>
+<p>這邊的編譯指的是將程式碼轉換成另一種代碼的這個過程。因為我們所看到的程式碼電腦無法直接執行，所以必須轉換成比較方便執行的形式。通常程式碼會在執行之前就先編譯好，以防止在執行的時候浪費時間在編譯上面。</p>
+<h3 id="組合語言"><a class="header" href="#組合語言">組合語言</a></h3>
+<p>程式語言有分很多種，組合語言就是其中一種分類。組合語言的程式碼基本上就是把電腦所看到的機器語言稍微轉換成比較好記的形式而已，所以感覺就像是直接對 CPU(中央處理器) 下指令。但是因為要編寫組合語言必須要很了解 CPU 的執行模式，所以必須要具備許多電腦結構的知識才行。</p>
+<h2 id="span-classsection_references相關資訊連結span-1"><a class="header" href="#span-classsection_references相關資訊連結span-1"><span class="section_references">相關資訊連結</span></a></h2>
+<h3 id="微軟的-c-與-net-framework-簡介"><a class="header" href="#微軟的-c-與-net-framework-簡介">微軟的 C# 與 .NET Framework 簡介</a></h3>
+<p><a href="http://msdn.microsoft.com/zh-tw/library/z1zx9t92(v=vs.80).aspx">http://msdn.microsoft.com/zh-tw/library/z1zx9t92(v=vs.80).aspx</a></p>
+<h3 id="維基百科對於物件導向的介紹"><a class="header" href="#維基百科對於物件導向的介紹">維基百科對於物件導向的介紹</a></h3>
+<p><a href="http://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B">http://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B</a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="第-2-課---ide-跟-hello-world"><a class="header" href="#第-2-課---ide-跟-hello-world">第 2 課 - IDE 跟 Hello World</a></h1>
+<h2 id="span-classsection_abstract本課介紹span-2"><a class="header" href="#span-classsection_abstract本課介紹span-2"><span class="section_abstract">本課介紹</span></a></h2>
+<p>這次主要在介紹 Visual C# 2010 Express 與製作第一個程式~</p>
+<p style="color: red">注意：因為微軟官方已經不提供 Visual C# Express 了，因此提供了全新的教學來介紹新的 IDE！
+詳情請參考「<a href="http://slmtsite.blogspot.com/2019/12/c-21-visual-studio-community.html">第2.1課-Visual Studio Community</a>」。</p>
+<h2 id="span-classsection_video教學影片span-2"><a class="header" href="#span-classsection_video教學影片span-2"><span class="section_video">教學影片</span></a></h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EFGi2KYO42w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2 id="span-classsection_highlights重點提示span-2"><a class="header" href="#span-classsection_highlights重點提示span-2"><span class="section_highlights">重點提示</span></a></h2>
+<ol>
+<li>安裝 Visual C# 2010 Express</li>
+<li>Visual C# 2010 Express 剛下載下來有使用期限，必須要註冊才能解除限制</li>
+<li>Visual C# 2010 Express 會幫你完成許多工作。例如新增專案時，他會幫你產生一些繁瑣的程式碼。</li>
+<li>撰寫第一個程式「Hello World」</li>
+<li>Visual C# 2010 Express 可以在你打某個程式碼的單字時，自動補齊剩下的程式碼</li>
+<li>最好常常按「Ctrl + S」存檔，因為未來是不可預測的</li>
+<li>想要測試程式，按下 IDE 上面的「綠色箭頭」就可以執行了</li>
+</ol>
+<h2 id="span-classsection_supplementary補充span-2"><a class="header" href="#span-classsection_supplementary補充span-2"><span class="section_supplementary">補充</span></a></h2>
+<h3 id="visual-studio"><a class="header" href="#visual-studio">Visual Studio</a></h3>
+<p>許多開發 C++ 或者 C# 的工程師應該都知道 Visual Studio 這個程式。它跟 Visual C# 2010 Express 一樣是開發程式的 IDE。這兩個程式在介面與操作上都極為類似，但是 Visual Studio 卻比 Visual C# 2010 Express 還要強大很多，功能也較為多樣。主要是因為Visual Studio 是「付費軟體」，而 Visual C# 2010 Express 其實可以算是前者的簡化版。</p>
+<p>事實上，就連在下開發程式的時候，也是使用 Visual Studio。不過就教學來說，Visual C# 2010 Express 也很夠用了。所以大家可以放心使用。</p>
+<h2 id="span-classsection_practice練習span"><a class="header" href="#span-classsection_practice練習span"><span class="section_practice">練習</span></a></h2>
+<p>試著修改 Console.WriteLine 裡面的文字，讓程式顯示自己的名字吧！
+像是：「我是 XXX！我超強！」 </p>
+<p>參考解答：<a href="https://github.com/slmt-tutorial-channel/c-sharp-solutions/blob/master/class_1_10/class2.md">https://github.com/slmt-tutorial-channel/c-sharp-solutions/blob/master/class_1_10/class2.md</a></p>
 
                         
                         <!-- Disque Comment Section -->
