@@ -5,7 +5,7 @@
 這次主要在介紹 Visual C# 2010 Express 與製作第一個程式~
 
 <p style="color: red">注意：因為微軟官方已經不提供 Visual C# Express 了，因此提供了全新的教學來介紹新的 IDE！
-詳情請參考「<a href="http://slmtsite.blogspot.com/2019/12/c-21-visual-studio-community.html">第2.1課-Visual Studio Community</a>」。</p>
+詳情請參考「<a href="class-2.1-vs-community.html">第2.1課-Visual Studio Community</a>」。</p>
 
 ## <span class="section_video">教學影片</span>
 
