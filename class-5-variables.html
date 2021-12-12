@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>第 3 課 - 程式結構與進入點 - 小山的 C# 教學</title>
+        <title>第 5 課 - 變數 - 小山的 C# 教學</title>
                 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">本書介紹</a></li><li class="chapter-item expanded affix "><a href="indexed-by-topics.html">課程目錄 (以主題分類)</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="class-0-introduction.html">第 0 課 - 閒聊與影片介紹</a></li><li class="chapter-item expanded "><a href="class-1-what-is-c-sharp.html">第 1 課 - C# 是甚麼？</a></li><li class="chapter-item expanded "><a href="class-2-ide-and-hello-world.html">第 2 課 - IDE 跟 Hello World</a></li><li class="chapter-item expanded "><a href="class-2.1-vs-community.html">第 2.1 課 - Visual Studio Community</a></li><li class="chapter-item expanded "><a href="class-3-entry-point.html" class="active">第 3 課 - 程式結構與進入點</a></li><li class="chapter-item expanded "><a href="class-4-windows-and-buttons.html">第 4 課 - 視窗與按鈕</a></li><li class="chapter-item expanded "><a href="class-5-variables.html">第 5 課 - 變數</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">本書介紹</a></li><li class="chapter-item expanded affix "><a href="indexed-by-topics.html">課程目錄 (以主題分類)</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="class-0-introduction.html">第 0 課 - 閒聊與影片介紹</a></li><li class="chapter-item expanded "><a href="class-1-what-is-c-sharp.html">第 1 課 - C# 是甚麼？</a></li><li class="chapter-item expanded "><a href="class-2-ide-and-hello-world.html">第 2 課 - IDE 跟 Hello World</a></li><li class="chapter-item expanded "><a href="class-2.1-vs-community.html">第 2.1 課 - Visual Studio Community</a></li><li class="chapter-item expanded "><a href="class-3-entry-point.html">第 3 課 - 程式結構與進入點</a></li><li class="chapter-item expanded "><a href="class-4-windows-and-buttons.html">第 4 課 - 視窗與按鈕</a></li><li class="chapter-item expanded "><a href="class-5-variables.html" class="active">第 5 課 - 變數</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -144,59 +144,60 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="第-3-課---程式結構與進入點"><a class="header" href="#第-3-課---程式結構與進入點">第 3 課 - 程式結構與進入點</a></h1>
+                        <h1 id="第-5-課---變數"><a class="header" href="#第-5-課---變數">第 5 課 - 變數</a></h1>
 <h2 id="span-classsection_abstract本課介紹span"><a class="header" href="#span-classsection_abstract本課介紹span"><span class="section_abstract">本課介紹</span></a></h2>
-<p>這課主要介紹上一課所寫的 HelloWorld 程式碼架構<br />
-以及 C# 的 Entry Point(程式進入點)</p>
+<p>這課主要是在介紹「變數」
+包括如何宣告變數、指定數值、以及將值顯示出來等等</p>
 <h2 id="span-classsection_video教學影片span"><a class="header" href="#span-classsection_video教學影片span"><span class="section_video">教學影片</span></a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B9YGbcXuGck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lAO0YRPONkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h2 id="span-classsection_highlights重點提示span"><a class="header" href="#span-classsection_highlights重點提示span"><span class="section_highlights">重點提示</span></a></h2>
 <ol>
-<li>我們可以大致將 C# 程式碼分成兩塊，一塊是含有 <code>using</code> 的區塊，一塊是程式碼的主要部分
+<li>「變數」主要是在扮演「儲存資料」的腳色</li>
+<li>所有的變數在使用之前，都必須先宣告過一遍
 <ul>
-<li><code>using</code> 部分主要是在呼叫內建的程式庫</li>
-<li>主要區塊就是我們編寫程式邏輯的地方</li>
+<li>目的在於讓電腦先知道變數的「型別」是甚麼</li>
 </ul>
 </li>
-<li>C# 裡面，用大括號包起來的程式碼算是一個「區塊」。這個區塊屬於括號上面的程式碼所有。</li>
-<li>Hello World 的這個程式由裡到外分成三層，namespace、class、method</li>
-<li>namespace 可以想成是自己的程式庫，所以在 namespace 內寫程式碼就是在編寫自己的程式庫</li>
-<li>class 一般負責 namespace 裡面一部分的工作</li>
-<li>method 是在 class 下，負責更細部事務的東西。它有一個明顯的特徵，通常 method 後面都會跟著一個小括號，像是：<code>void Example(int num)</code></li>
-<li><code>static void main(string[] args)</code> 是特別的 method，所有的 C# 程式都會從這個 method 開始執行。 一般稱之為「進入點(Entry Point)」</li>
-<li><code>Console.WriteLine</code> 跟 <code>Console.ReadKey</code> 也都是 method。前者會在黑色視窗上顯示文字，後者會等待使用者輸入任意字元</li>
-<li>每一行程式碼都必須要加上「;」(分號)，代表一行的結束</li>
-</ol>
-<h2 id="span-classsection_supplementary補充span"><a class="header" href="#span-classsection_supplementary補充span"><span class="section_supplementary">補充</span></a></h2>
-<h3 id="using-system"><a class="header" href="#using-system"><code>using System</code></a></h3>
-<p>大家可以看到程式裡面出現了 Console.WriteLine 以及其他 method。那這些 method 到底都寫在哪裡呢？事實上，就是寫在那些名為「System」的程式庫裡。那些程式庫包含了大量可以讓我們寫 C# 更方便的程式碼，以及我們之後會用到的「視窗」也都是寫在名為「System.Windows.Forms」的程式庫內。想要使用這些程式庫，就必須要在程式碼上面打上「using {程式庫名稱}」才行。不過剛開始不太需要注意，因為你的 IDE 都會自動地幫你打理好這些問題。</p>
-<h3 id="console"><a class="header" href="#console">Console</a></h3>
-<p>寫過 C\C++ 程式的人，我想大多數顯示出來的結果都是出現在這個黑色的視窗上對吧？其實我們現在所看到這些視窗、按鈕甚麼的，背後都是由大量的程式碼所建立出來的。而且事實上，這些圖形的畫面是非常耗費資源。早期的程式設計師寫程式，都是在我們看到那個黑底白字的畫面上跑的。而 Console 就是 Windows 下的黑底白字介面。大家可以在「附屬應用程式」&gt;「命令提示字元」那邊開啟 Console 的畫面。</p>
-<h3 id="entry-point"><a class="header" href="#entry-point">Entry Point</a></h3>
-<p>每個程式都會有個獨一無二的「進入點」，也就是作為電腦一開始執行的 method。C\C++ 一般是使用「int main(void)」，win32 的程式是使用「int WINAPI WinMain(...)」，而 C# 就是這個「static void main(string[] args)」。基本上，這個名稱是規定好的，所以不可以隨便更改。如果改成別的名字，電腦就會不知道該從哪裡開始執行。</p>
-<h2 id="span-classsection_practice練習span"><a class="header" href="#span-classsection_practice練習span"><span class="section_practice">練習</span></a></h2>
-<ol>
-<li>
-<p>試著讓程式顯示多行的文字
-例如：</p>
-<pre><code>C# 真好玩
-而且我會寫第一個程式了
-這是第三行的說
+<li>想要宣告多個變數，只需要在變數中間用「,」區隔即可</li>
+<li>「<code>int</code>」代表「整數(Integer)」，例如：-2、10、800000、-9999</li>
+<li>「<code>=</code>」不是「相等」，而是「指定」</li>
+<li>在使用變數之前，務必先存入某個數值。如果沒有這樣做，電腦不會讓你編譯它</li>
+<li>如果怕自己忘記設定數值，可以在宣告的時候順便指定數值，像是...
+<pre><code class="language-c#">int number = 10;
 </code></pre>
 </li>
-<li>
-<p>接上一題，試著讓程式顯示一行停頓一次。每次停頓時，必須要按下鍵盤按鍵才會繼續。</p>
-</li>
-<li>
-<p>根據「相關資訊連結」的「Console 可以使用的 method 清單」，查查看還有甚麼其他 method 可以使用。例如：讓電腦發出 Beep 的一聲。</p>
-</li>
+<li>一般來說，變數的值是可以一直修改的</li>
 </ol>
-<p>參考解答：<a href="https://github.com/slmt-tutorial-channel/c-sharp-solutions/blob/master/class_1_10/class3.md">https://github.com/slmt-tutorial-channel/c-sharp-solutions/blob/master/class_1_10/class3.md</a></p>
+<h2 id="span-classsection_supplementary補充span"><a class="header" href="#span-classsection_supplementary補充span"><span class="section_supplementary">補充</span></a></h2>
+<h3 id="變數的名稱限制"><a class="header" href="#變數的名稱限制">變數的名稱限制</a></h3>
+<p>C# 對於變數的命名有一套限制規則，並不是所有的名稱都可用來當作變數名稱使用。最基本的限制就是，變數不可以使用「關鍵字(Keyword)」作為名稱。那甚麼是關鍵字呢？就是 C# 裡面與程式結構有關的字眼，例如：class、using、namespace.... 基本上就是那些你在 IDE 中看起來有顏色的字。</p>
+<p>那另外，其他限制還包括，在同一個 Scope(下面有解釋) 內，不可以使用一樣的變數名稱。變數的第一個字必須是英文、底線等等。詳細可以看看「相關資訊連結」的文章。</p>
+<p>那還有一個問題是，可不可以用中文字當作變數名稱呢？可以，但是我強烈建議不要這樣做。主要是因為中文字與一般文字的儲存方式不同，也許會發生不可預期的錯誤。</p>
+<h3 id="scope"><a class="header" href="#scope">Scope</a></h3>
+<p>變數並不是永久長存的，也不會一直在程式裡面儲存著。每個變數都有它作用的限制範圍，或者也可以說是變數的生存期限。而這個範圍，就稱作「Scope」。今天你在某個地方宣告了變數，但是只要超出了變數的 scope，就無法使用它了。</p>
+<p>那要怎麼判別變數的 scope 呢？ 很簡單，只要看「大括號 { }」的包起來的區塊就行了。基本上，變數只在大括號包起來的範圍內才有效。而在大括號外面使用變數就會無法呼叫到它。目前只需要知道這樣就好了。</p>
+<p>這 個 scope 還提供了一個好處。變數名稱是不可以重複的，不過它有個例外存在。 就是如果你在一個變數的 scope 外宣告了一樣名稱的變數，那就不會互相影響。例如，你在 void button1_Click() 裡面宣告了 num，跟在 void button2_Click() 裡面宣告了 num，這樣就不會互相衝突。</p>
+<h3 id="型別-type"><a class="header" href="#型別-type">型別 Type</a></h3>
+<p>變數在使用之前必須要先宣告型別。這個作用是在於讓電腦知道，它要配給這個變數多少記憶體空間。另外也是要在後面進行一些使用上的判斷，通常可以預防不少語法上的錯誤。</p>
+<p>變數的型別有很多種，詳細的種類後面會慢慢介紹。</p>
+<h3 id="指定"><a class="header" href="#指定">指定</a></h3>
+<p>這課提到「=」代表「指定」，而不是「相等」。真正的「相等」是使用「==」這個符號。這個區分非常重要，因為這是程式設計師常犯的錯誤。在這裡，「指定」代表的意思其實就是把「右邊的值存入左邊的變數」裡的意思。只要這樣記就比較不會出錯。</p>
+<h3 id="個人對於變數的命名習慣"><a class="header" href="#個人對於變數的命名習慣">個人對於變數的命名習慣</a></h3>
+<p>我個人對於變數命名有個習慣。如果我的變數名稱是由多個單字拼成的，那我第一個單字的第一個字母會小寫，後面單字的第一個字母會大寫。這不是硬性規定的，但有一部分的趨勢是這樣的。</p>
+<p>Ex: 假設某個變數是由「form、background、color」組合而成</p>
+<pre><code class="language-c#">formBackgroundColor
+</code></pre>
+<h2 id="span-classsection_practice練習span"><a class="header" href="#span-classsection_practice練習span"><span class="section_practice">練習</span></a></h2>
+<ol>
+<li>試著在 button1_Click 裡面宣告兩個「名稱相同」的變數，可以發現甚麼問題？</li>
+<li>那如果我分別在 button1_Click 跟 Form1 這兩個 method 中宣告一樣的變數呢？</li>
+<li>那或者我在 button1_Click 裡面跟外面(注意不是在 Form1 的 method 中)，宣告名稱一樣的變數呢？</li>
+</ol>
+<p>上面這三種情況，為什麼有時候變數可以名稱相同，有時候不行？<br />
+(參考補充的 Scope)</p>
 <h2 id="span-classsection_references相關資訊連結span"><a class="header" href="#span-classsection_references相關資訊連結span"><span class="section_references">相關資訊連結</span></a></h2>
-<h3 id="system-程式庫裡面包含的-class-清單"><a class="header" href="#system-程式庫裡面包含的-class-清單">System 程式庫裡面包含的 Class 清單</a></h3>
-<p><a href="http://msdn.microsoft.com/zh-tw/library/system%28v=vs.80%29.aspx">http://msdn.microsoft.com/zh-tw/library/system%28v=vs.80%29.aspx</a></p>
-<h3 id="console-可以使用的-method-清單"><a class="header" href="#console-可以使用的-method-清單">Console 可以使用的 method 清單</a></h3>
-<p><a href="http://msdn.microsoft.com/zh-tw/library/system.console_methods%28v=vs.80%29.aspx">http://msdn.microsoft.com/zh-tw/library/system.console_methods%28v=vs.80%29.aspx</a></p>
+<h3 id="變數的內建型別列表"><a class="header" href="#變數的內建型別列表">變數的內建型別列表</a></h3>
+<p><a href="http://msdn.microsoft.com/zh-tw/library/cs7y5x0x%28v=vs.90%29.aspx">http://msdn.microsoft.com/zh-tw/library/cs7y5x0x%28v=vs.90%29.aspx</a></p>
 
                         
                         <!-- Disque Comment Section -->
@@ -206,8 +207,8 @@
                         </div>
                         <script>
                             var disqus_config = function () {
-                            this.page.url = 'https://slmt-tutorial-channel.github.io/c-sharp-tutorial-book/class-3-entry-point.md';
-                            this.page.identifier = 'class-3-entry-point.md';
+                            this.page.url = 'https://slmt-tutorial-channel.github.io/c-sharp-tutorial-book/class-5-variables.md';
+                            this.page.identifier = 'class-5-variables.md';
                             };
                             (function() { // DON'T EDIT BELOW THIS LINE
                             var d = document, s = d.createElement('script');
@@ -221,13 +222,10 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="class-2.1-vs-community.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="class-4-windows-and-buttons.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-                                                    <a rel="next" href="class-4-windows-and-buttons.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
                         
                         <div style="clear: both"></div>
                     </nav>
@@ -235,13 +233,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="class-2.1-vs-community.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="class-4-windows-and-buttons.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-                                    <a rel="next" href="class-4-windows-and-buttons.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
                             </nav>
 
         </div>
