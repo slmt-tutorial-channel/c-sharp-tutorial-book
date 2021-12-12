@@ -12,8 +12,6 @@
 
 課程投影片：
 
-範例程式碼：
-
 ## <span class="section_highlights">重點提示</span>
 
 

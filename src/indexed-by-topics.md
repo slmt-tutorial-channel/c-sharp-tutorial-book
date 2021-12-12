@@ -19,7 +19,7 @@
 
 [第4課 - 視窗與按鈕](class-4-windows-and-buttons.md)
 
-第5課 - 變數
+[第5課 - 變數](class-5-variables.md)
 
 第6課 - 基本計算
 

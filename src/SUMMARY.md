@@ -11,3 +11,4 @@
 - [第 2.1 課 - Visual Studio Community](./class-2.1-vs-community.md)
 - [第 3 課 - 程式結構與進入點](./class-3-entry-point.md)
 - [第 4 課 - 視窗與按鈕](./class-4-windows-and-buttons.md)
+- [第 5 課 - 變數](./class-5-variables.md)
