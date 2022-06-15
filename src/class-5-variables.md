@@ -71,6 +71,8 @@ formBackgroundColor
 上面這三種情況，為什麼有時候變數可以名稱相同，有時候不行？  
 (參考補充的 Scope)
 
+參考解答：<https://github.com/slmt-tutorial-channel/c-sharp-solutions/blob/master/class_1_10/class5.md>
+
 ## <span class="section_references">相關資訊連結</span>
 
 ### 變數的內建型別列表
