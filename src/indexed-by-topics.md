@@ -21,7 +21,7 @@
 
 [第5課 - 變數](class-5-variables.md)
 
-第6課 - 基本計算
+[第6課 - 基本計算](class-6-basic-calculation.md)
 
 第7課 - 變數宣告意義與型別
 

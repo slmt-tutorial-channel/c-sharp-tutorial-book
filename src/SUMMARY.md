@@ -12,4 +12,5 @@
 - [第 3 課 - 程式結構與進入點](./class-3-entry-point.md)
 - [第 4 課 - 視窗與按鈕](./class-4-windows-and-buttons.md)
 - [第 5 課 - 變數](./class-5-variables.md)
+- [第 6 課 - 基本計算](./class-6-basic-calculation.md)
 - [第 46 課 - 五子棋小遊戲 (七) - 簡單勝利判斷](./class-46-gomoku-7.md)
