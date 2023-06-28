@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>第 0 課 - 閒聊與影片介紹 - 小山的 C# 教學</title>
+        <title>第 6 課 - 基本計算 - 小山的 C# 教學</title>
                 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">本書介紹</a></li><li class="chapter-item expanded affix "><a href="indexed-by-topics.html">課程目錄 (以主題分類)</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="class-0-introduction.html" class="active">第 0 課 - 閒聊與影片介紹</a></li><li class="chapter-item expanded "><a href="class-1-what-is-c-sharp.html">第 1 課 - C# 是甚麼？</a></li><li class="chapter-item expanded "><a href="class-2-ide-and-hello-world.html">第 2 課 - IDE 跟 Hello World</a></li><li class="chapter-item expanded "><a href="class-2.1-vs-community.html">第 2.1 課 - Visual Studio Community</a></li><li class="chapter-item expanded "><a href="class-3-entry-point.html">第 3 課 - 程式結構與進入點</a></li><li class="chapter-item expanded "><a href="class-4-windows-and-buttons.html">第 4 課 - 視窗與按鈕</a></li><li class="chapter-item expanded "><a href="class-5-variables.html">第 5 課 - 變數</a></li><li class="chapter-item expanded "><a href="class-6-basic-calculation.html">第 6 課 - 基本計算</a></li><li class="chapter-item expanded "><a href="class-46-gomoku-7.html">第 46 課 - 五子棋小遊戲 (七) - 簡單勝利判斷</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">本書介紹</a></li><li class="chapter-item expanded affix "><a href="indexed-by-topics.html">課程目錄 (以主題分類)</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="class-0-introduction.html">第 0 課 - 閒聊與影片介紹</a></li><li class="chapter-item expanded "><a href="class-1-what-is-c-sharp.html">第 1 課 - C# 是甚麼？</a></li><li class="chapter-item expanded "><a href="class-2-ide-and-hello-world.html">第 2 課 - IDE 跟 Hello World</a></li><li class="chapter-item expanded "><a href="class-2.1-vs-community.html">第 2.1 課 - Visual Studio Community</a></li><li class="chapter-item expanded "><a href="class-3-entry-point.html">第 3 課 - 程式結構與進入點</a></li><li class="chapter-item expanded "><a href="class-4-windows-and-buttons.html">第 4 課 - 視窗與按鈕</a></li><li class="chapter-item expanded "><a href="class-5-variables.html">第 5 課 - 變數</a></li><li class="chapter-item expanded "><a href="class-6-basic-calculation.html" class="active">第 6 課 - 基本計算</a></li><li class="chapter-item expanded "><a href="class-46-gomoku-7.html">第 46 課 - 五子棋小遊戲 (七) - 簡單勝利判斷</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -144,25 +144,53 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="第-0-課---閒聊與影片介紹"><a class="header" href="#第-0-課---閒聊與影片介紹">第 0 課 - 閒聊與影片介紹</a></h1>
+                        <h1 id="第-6-課---基本計算"><a class="header" href="#第-6-課---基本計算">第 6 課 - 基本計算</a></h1>
 <h2 id="span-classsection_abstract本課介紹span"><a class="header" href="#span-classsection_abstract本課介紹span"><span class="section_abstract">本課介紹</span></a></h2>
-<p>本課主要是談關於教學影片的雜事，裡面並沒有任何教學<br />
-想直接看教學的人請從下個影片開始看喔！</p>
+<p>此課主要在教如何進行基本的加減乘除計算<br />
+以及複合運算子與遞增預算子的介紹</p>
 <h2 id="span-classsection_video教學影片span"><a class="header" href="#span-classsection_video教學影片span"><span class="section_video">教學影片</span></a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-KFOqH73XFk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UvhsKnLPpIc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h2 id="span-classsection_highlights重點提示span"><a class="header" href="#span-classsection_highlights重點提示span"><span class="section_highlights">重點提示</span></a></h2>
 <ol>
-<li>希望我講的話大家都聽得清楚</li>
-<li>有個朋友想學 C#，所以我就乾脆地拍了教學影片</li>
-<li>每個影片長短會盡量控制在 10 分鐘上下</li>
-<li>我們的 C# 教學會使用名為 Visual C# 2010 Express 的 IDE 來開發程式</li>
+<li><code>+</code>、<code>-</code>、<code>*</code>、<code>/</code> 分別代表加、減、乘、除的意思</li>
+<li>在 C# 裡面計算數學就只要單純地將數學式列出來就可以了，但是算式務必要在等號的右側，左側則是儲存結果的變數</li>
+<li>除法要是遇到無法整除的情形，它仍會計算到小數點後</li>
+<li>如果你試圖要將小數存入 <code>int</code> (整數) 變數裡面，C# 會自動省略小數點之後，只留下整數的部分存進變數裡面
+<ul>
+<li>例如下面程式碼計算結果應為小數的 <code>3.75</code>，但是因為 <code>a</code> 被宣告為整數，所以最後只會存入整數的部分 <code>3</code>
+<pre><code class="language-c#">int a;
+a = 30 / 8;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>如果你單純只想算除法的「餘數」的話，可以使用 <code>%</code> 這個符號，相當於數學的 mod 運算</li>
+<li>下面這個式子
+<pre><code class="language-c#">number = number + 8;
+</code></pre>
+可以簡化為
+<pre><code class="language-c#">number += 8;
+</code></pre>
+這個做法可以同樣套用到 <code>-</code>、<code>*</code>、<code>/</code>、<code>%</code> 這些符號上</li>
+<li>如果今天只需要做單純「遞增」或「遞減」的計算，可以使用
+<pre><code class="language-c#">number++;
+number--;   
+</code></pre>
+上面分別代表 number 加一與減一 (注意：只能用於加減一的情況)</li>
 </ol>
 <h2 id="span-classsection_supplementary補充span"><a class="header" href="#span-classsection_supplementary補充span"><span class="section_supplementary">補充</span></a></h2>
-<h3 id="ide"><a class="header" href="#ide">IDE</a></h3>
-<p>IDE 全名為 Integrated Development Environment，中文稱之為「整合開發環境」。簡單來說，IDE 就是一個用來寫程式的程式。裡面整合許多寫程式以及執行程式需要的各種環境。如此一來就可以讓程式設計師專注在撰寫程式碼上面，而不用耗費心思去研究如何編譯(Compile)以及管理程式碼。</p>
+<h3 id="計算結果"><a class="header" href="#計算結果">計算結果</a></h3>
+<p>假設今天你寫了一個四則運算的式子，像是 <code>12 + 30 * 23 - 21</code> 這樣。那他的計算結果會跑到哪裡去呢？事實上，C# 在計算的時候，會依照優先順序把上述的結果一次一次地計算出來。然後再存入「=」左邊的變數裡。</p>
+<p>像是 <code>12 + 30 * 23 - 21</code> (別忘記先乘除後加減的原則) 就會先變成 <code>12 + 690 - 21</code> ，再轉變成 <code>702 - 21</code> ，再轉變成 <code>681</code>，最後再存進變數裡。所以其實電腦也沒聰明多少，他們計算的方法跟我們是差不多的。</p>
+<h3 id="整數變數"><a class="header" href="#整數變數">整數變數</a></h3>
+<p>在影片中可以看到，我們把像是 <code>30 / 8</code> 這種除完後會出現小數 <code>3.75</code> 的計算結果硬是存入整數變數中，就會發生小數點後的 <code>.75</code> 不見，只留下 <code>3</code> 的結果。因此如果今天要把小數完整地保留下來，就必須要使用「小數的變數」。關於這點後面的章節會提到。</p>
+<h3 id="優先順序"><a class="header" href="#優先順序">優先順序</a></h3>
+<p>這些計算符號 <code>+ - * \ %</code> ，甚至 <code>=</code>、<code>++</code>這些符號，都被稱作為「運算子」(Operator)。C# 一看到運算子，就會依照他的計算邏輯把運算子左右兩邊的值抓出來做計算。那麼為了要使結果正確，並且有規則可循。每個運算子都有優先的順序。</p>
+<p>像是我們熟悉的「先乘除、後加減」也是 C# 使用運算子的優先順序之一，所以它就會先計算 <code>* / %</code> 的結果，再去計算 <code>+ -</code> 的結果。比較少人注意到的是， <code>=</code> 的優先順序是很低的，所以 C# 才會等算式的結果都出來之後才把值存入變數裡。</p>
+<p>詳細的優先順序可以參考下面的連結。 </p>
 <h2 id="span-classsection_references相關資訊連結span"><a class="header" href="#span-classsection_references相關資訊連結span"><span class="section_references">相關資訊連結</span></a></h2>
-<h3 id="維基百科---ide"><a class="header" href="#維基百科---ide">維基百科 - IDE</a></h3>
-<p><a href="http://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">http://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83</a></p>
+<h3 id="c-運算子優先順序和關聯性"><a class="header" href="#c-運算子優先順序和關聯性">C# 運算子優先順序和關聯性</a></h3>
+<p><a href="https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/#operator-precedence">https://learn.microsoft.com/zh-tw/dotnet/csharp/language-reference/operators/#operator-precedence</a></p>
 
                         
                         <!-- Disque Comment Section -->
@@ -172,8 +200,8 @@
                         </div>
                         <script>
                             var disqus_config = function () {
-                            this.page.url = 'https://slmt-tutorial-channel.github.io/c-sharp-tutorial-book/class-0-introduction.md';
-                            this.page.identifier = 'class-0-introduction.md';
+                            this.page.url = 'https://slmt-tutorial-channel.github.io/c-sharp-tutorial-book/class-6-basic-calculation.md';
+                            this.page.identifier = 'class-6-basic-calculation.md';
                             };
                             (function() { // DON'T EDIT BELOW THIS LINE
                             var d = document, s = d.createElement('script');
@@ -187,11 +215,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="indexed-by-topics.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="class-5-variables.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-                                                    <a rel="next" href="class-1-what-is-c-sharp.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="class-46-gomoku-7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -201,11 +229,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="indexed-by-topics.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="class-5-variables.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-                                    <a rel="next" href="class-1-what-is-c-sharp.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="class-46-gomoku-7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>
