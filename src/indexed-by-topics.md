@@ -23,7 +23,7 @@
 
 [第6課 - 基本計算](class-6-basic-calculation.md)
 
-第7課 - 變數宣告意義與型別
+[第7課 - 變數宣告意義與型別](class-7-the-meaning-of-variable-declaration-and-types.md)
 
 第8課 - string 簡介 (僅有 Youtube 影片)
 
