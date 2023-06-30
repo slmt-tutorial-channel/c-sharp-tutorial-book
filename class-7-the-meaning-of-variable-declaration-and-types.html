@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>第 1 課 - C# 是甚麼？ - 小山的 C# 教學</title>
+        <title>第 7 課 - 變數宣告意義與型別 - 小山的 C# 教學</title>
                 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">本書介紹</a></li><li class="chapter-item expanded affix "><a href="indexed-by-topics.html">課程目錄 (以主題分類)</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="class-0-introduction.html">第 0 課 - 閒聊與影片介紹</a></li><li class="chapter-item expanded "><a href="class-1-what-is-c-sharp.html" class="active">第 1 課 - C# 是甚麼？</a></li><li class="chapter-item expanded "><a href="class-2-ide-and-hello-world.html">第 2 課 - IDE 跟 Hello World</a></li><li class="chapter-item expanded "><a href="class-2.1-vs-community.html">第 2.1 課 - Visual Studio Community</a></li><li class="chapter-item expanded "><a href="class-3-entry-point.html">第 3 課 - 程式結構與進入點</a></li><li class="chapter-item expanded "><a href="class-4-windows-and-buttons.html">第 4 課 - 視窗與按鈕</a></li><li class="chapter-item expanded "><a href="class-5-variables.html">第 5 課 - 變數</a></li><li class="chapter-item expanded "><a href="class-6-basic-calculation.html">第 6 課 - 基本計算</a></li><li class="chapter-item expanded "><a href="class-7-the-meaning-of-variable-declaration-and-types.html">第 7 課 - 變數宣告意義與型別</a></li><li class="chapter-item expanded "><a href="class-46-gomoku-7.html">第 46 課 - 五子棋小遊戲 (七) - 簡單勝利判斷</a></li></ol>            </div>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">本書介紹</a></li><li class="chapter-item expanded affix "><a href="indexed-by-topics.html">課程目錄 (以主題分類)</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="class-0-introduction.html">第 0 課 - 閒聊與影片介紹</a></li><li class="chapter-item expanded "><a href="class-1-what-is-c-sharp.html">第 1 課 - C# 是甚麼？</a></li><li class="chapter-item expanded "><a href="class-2-ide-and-hello-world.html">第 2 課 - IDE 跟 Hello World</a></li><li class="chapter-item expanded "><a href="class-2.1-vs-community.html">第 2.1 課 - Visual Studio Community</a></li><li class="chapter-item expanded "><a href="class-3-entry-point.html">第 3 課 - 程式結構與進入點</a></li><li class="chapter-item expanded "><a href="class-4-windows-and-buttons.html">第 4 課 - 視窗與按鈕</a></li><li class="chapter-item expanded "><a href="class-5-variables.html">第 5 課 - 變數</a></li><li class="chapter-item expanded "><a href="class-6-basic-calculation.html">第 6 課 - 基本計算</a></li><li class="chapter-item expanded "><a href="class-7-the-meaning-of-variable-declaration-and-types.html" class="active">第 7 課 - 變數宣告意義與型別</a></li><li class="chapter-item expanded "><a href="class-46-gomoku-7.html">第 46 課 - 五子棋小遊戲 (七) - 簡單勝利判斷</a></li></ol>            </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
 
@@ -144,35 +144,31 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="第-1-課---c-是甚麼"><a class="header" href="#第-1-課---c-是甚麼">第 1 課 - C# 是甚麼？</a></h1>
+                        <h1 id="第-7-課---變數宣告意義與型別"><a class="header" href="#第-7-課---變數宣告意義與型別">第 7 課 - 變數宣告意義與型別</a></h1>
 <h2 id="span-classsection_abstract本課介紹span"><a class="header" href="#span-classsection_abstract本課介紹span"><span class="section_abstract">本課介紹</span></a></h2>
-<p>此課主要在簡介 C# 以及介紹它如何運作</p>
+<p>此課解釋為何變數需要進行宣告，另外進一步地介紹之前提過的 <code>int</code> 型別，並另外介紹 <code>float</code>、<code>double</code>、<code>bool</code> 型別的變數。</p>
 <h2 id="span-classsection_video教學影片span"><a class="header" href="#span-classsection_video教學影片span"><span class="section_video">教學影片</span></a></h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GDnI1_JyfwA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/k2kjfxbWUuM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <h2 id="span-classsection_highlights重點提示span"><a class="header" href="#span-classsection_highlights重點提示span"><span class="section_highlights">重點提示</span></a></h2>
 <ol>
-<li>C# 是由 Microsoft (微軟) 公司推出的程式語言</li>
-<li>C# 比較適合在 Windows 下面運行</li>
-<li>C# 是物件導向的程式語言</li>
-<li>「物件導向」簡單來說就是「透過建立物件，並且讓這些物件互動，來達成你想完成的目標」</li>
-<li>物件導向有三個原則「封裝(Encapsulation)」、「繼承(Inheritance)」、「多形(Polymorphism)」</li>
-<li>C# 必須要配合「.NET Framework」來運行</li>
-<li>C# 經過編譯之後，得到的是一種稱為「中間代碼」的東西，而不是組合語言的程式碼。</li>
+<li>宣告變數的意義在於，先告知電腦到底我們要給這個變數多少記憶體空間 (電腦會從型別判斷) 以及它的名稱是甚麼。</li>
+<li>在 C# 裡面，每個 <code>int</code> 的變數可以分配到 32 bits(4 bytes) 的記憶體空間。也就是說，對於每個 <code>int</code> 的變數，電腦會存放 32 個 0 或 1 在記憶體裡面。</li>
+<li><code>int</code> 只能儲存有限大小的數字，而這個範圍是從 2^31 - 1 到 - 2^31，也就是 2,147,483,647 到 - 2,147,483,648 這之間的數字。</li>
+<li>想要儲存小數可以使用 <code>float</code> 或 <code>double</code>，一般會推薦使用 <code>double</code>，因為可以儲存較廣的數字。</li>
+<li>C# 預設情況下會將所有數字當成 <code>double</code> 來處理。</li>
+<li>有一種型別 <code>bool</code> 只能儲存 <code>true</code>、 <code>false</code> 兩種資料，這種數值通常用來儲存判斷式的結果。</li>
 </ol>
 <h2 id="span-classsection_supplementary補充span"><a class="header" href="#span-classsection_supplementary補充span"><span class="section_supplementary">補充</span></a></h2>
-<h3 id="microsoft"><a class="header" href="#microsoft">Microsoft</a></h3>
-<p>相信大家都知道世界知名的軟體公司，微軟。這個由比爾蓋茲(Bill Gates)創建的公司，旗下的作業系統，Windows，已經深入到我們周遭的電腦之中。現在大多數的人都使用過他們的產品，而且也變成生活中或不可缺的一部分。</p>
-<h3 id="net-framework"><a class="header" href="#net-framework">.NET Framework</a></h3>
-<p>C# 無法像用 C/C++ 寫的程式，直接在各種環境下執行。C# 經過編譯之後產生的是一種電腦無法直接識別的代碼，因此必須要經過一個程式幫它翻譯。而這個程式就叫做「Common Language Runtime (CLR)」，除了幫忙轉換代碼外，它還會負責管理 C# 程式使用的資源，這對寫程式的人來說是非常方便的。而 CLR 以及 C# 需要用到的其他資料，都被整合在「.NET Framework」這個環境之下。所以「.NET Framework」對 C# 來說是不可或缺的一部份。</p>
-<h3 id="編譯compile"><a class="header" href="#編譯compile">編譯(Compile)</a></h3>
-<p>這邊的編譯指的是將程式碼轉換成另一種代碼的這個過程。因為我們所看到的程式碼電腦無法直接執行，所以必須轉換成比較方便執行的形式。通常程式碼會在執行之前就先編譯好，以防止在執行的時候浪費時間在編譯上面。</p>
-<h3 id="組合語言"><a class="header" href="#組合語言">組合語言</a></h3>
-<p>程式語言有分很多種，組合語言就是其中一種分類。組合語言的程式碼基本上就是把電腦所看到的機器語言稍微轉換成比較好記的形式而已，所以感覺就像是直接對 CPU(中央處理器) 下指令。但是因為要編寫組合語言必須要很了解 CPU 的執行模式，所以必須要具備許多電腦結構的知識才行。</p>
+<h3 id="32-bits-的整數"><a class="header" href="#32-bits-的整數">32 bits 的整數</a></h3>
+<p>本課提到 C# 裡面的 <code>int</code> 是使用 32 bits 的空間。但是在 C/C++ 裡面，int 變數使用的空間則跟 CPU 與 Compiler 有關。有時候會是 32-bit ，有時候是 64-bit。而 C# 並沒有這個問題。因為事實上，C# 內建了三種 <code>int</code> 型別，分別為 <code>Int16</code>、<code>Int32</code>、<code>Int64</code>，代表16、32、64 bits 的整數。當我們打 <code>int</code> 時，程式會自動解析為 <code>Int32</code> 來處理。因此固定都是 32-bit 的整數。</p>
+<h3 id="大數-big-integer"><a class="header" href="#大數-big-integer">大數 Big Integer</a></h3>
+<p><code>int</code> 能儲存的數字有限，因此當我們需要儲存更大的數字時，可能就不夠用了。從上一段文中可以知道，C# 還有內建的 <code>Int64</code> 這個型別可以使用。但是在密碼學中，進行 RSA 演算法時，因為內含大量的指數 (exponential) 與模數 (mod) 預算，使得 64-bit 的數字也不足以儲存計算結果。這個時候，大數 (Big Integer) 就登場了。</p>
+<p>「大數」其實與一般的「整數」無異，不過它使用的記憶體空間會隨著儲存的數字做動態變化。基本上只要你的記憶體夠大，想要儲存多大的數字都不是問題。大數實作方式有很多種，而 Java 跟 C# 都有官方寫好的版本供大家使用。如何實作大數並加以使用也是程式競賽中時常出現的考題呢！</p>
 <h2 id="span-classsection_references相關資訊連結span"><a class="header" href="#span-classsection_references相關資訊連結span"><span class="section_references">相關資訊連結</span></a></h2>
-<h3 id="微軟的-c-與-net-framework-簡介"><a class="header" href="#微軟的-c-與-net-framework-簡介">微軟的 C# 與 .NET Framework 簡介</a></h3>
-<p><a href="http://msdn.microsoft.com/zh-tw/library/z1zx9t92(v=vs.80).aspx">http://msdn.microsoft.com/zh-tw/library/z1zx9t92(v=vs.80).aspx</a></p>
-<h3 id="維基百科對於物件導向的介紹"><a class="header" href="#維基百科對於物件導向的介紹">維基百科對於物件導向的介紹</a></h3>
-<p><a href="http://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B">http://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B</a></p>
+<h3 id="變數的內建型別列表"><a class="header" href="#變數的內建型別列表">變數的內建型別列表</a></h3>
+<p><a href="https://learn.microsoft.com/zh-tw/previous-versions/visualstudio/visual-studio-2008/cs7y5x0x(v=vs.90)?redirectedfrom=MSDN">https://learn.microsoft.com/zh-tw/previous-versions/visualstudio/visual-studio-2008/cs7y5x0x(v=vs.90)?redirectedfrom=MSDN</a></p>
+<h3 id="大數-big-integer-相關資訊"><a class="header" href="#大數-big-integer-相關資訊">大數 Big Integer 相關資訊</a></h3>
+<p><a href="https://learn.microsoft.com/zh-tw/dotnet/api/system.numerics.biginteger?view=net-7.0&amp;redirectedfrom=MSDN">https://learn.microsoft.com/zh-tw/dotnet/api/system.numerics.biginteger?view=net-7.0&amp;redirectedfrom=MSDN</a></p>
 
                         
                         <!-- Disque Comment Section -->
@@ -182,8 +178,8 @@
                         </div>
                         <script>
                             var disqus_config = function () {
-                            this.page.url = 'https://slmt-tutorial-channel.github.io/c-sharp-tutorial-book/class-1-what-is-c-sharp.md';
-                            this.page.identifier = 'class-1-what-is-c-sharp.md';
+                            this.page.url = 'https://slmt-tutorial-channel.github.io/c-sharp-tutorial-book/class-7-the-meaning-of-variable-declaration-and-types.md';
+                            this.page.identifier = 'class-7-the-meaning-of-variable-declaration-and-types.md';
                             };
                             (function() { // DON'T EDIT BELOW THIS LINE
                             var d = document, s = d.createElement('script');
@@ -197,11 +193,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                                                    <a rel="prev" href="class-0-introduction.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                                    <a rel="prev" href="class-6-basic-calculation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
-                                                    <a rel="next" href="class-2-ide-and-hello-world.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                                    <a rel="next" href="class-46-gomoku-7.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -211,11 +207,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                                    <a rel="prev" href="class-0-introduction.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                    <a rel="prev" href="class-6-basic-calculation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
-                                    <a rel="next" href="class-2-ide-and-hello-world.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                    <a rel="next" href="class-46-gomoku-7.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                             </nav>
