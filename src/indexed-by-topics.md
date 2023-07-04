@@ -44,7 +44,7 @@
 
 ## 三、視窗設計 (Windows Form Design)
 
-第9課 - Label 與 點擊次數記錄程式 (僅有 Youtube 影片)
+[第9課 - Label 與 點擊次數記錄程式](class-9-label-and-click-count-program.md)
 
 第13課 - NumericUpDown
 

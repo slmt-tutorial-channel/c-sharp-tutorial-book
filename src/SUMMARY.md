@@ -15,4 +15,5 @@
 - [第 6 課 - 基本計算](./class-6-basic-calculation.md)
 - [第 7 課 - 變數宣告意義與型別](./class-7-the-meaning-of-variable-declaration-and-types.md)
 - [第 8 課 - string 簡介](./class-8-string.md)
+- [第 9 課 - Label 與 點擊次數記錄程式](./class-9-label-and-click-count-program.md)
 - [第 46 課 - 五子棋小遊戲 (七) - 簡單勝利判斷](./class-46-gomoku-7.md)
